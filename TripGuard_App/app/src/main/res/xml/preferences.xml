@@ -1,0 +1,62 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<PreferenceCategory app:title="@string/location_header"
+		android:layout="@layout/title_view">
+
+		<SwitchPreferenceCompat
+			app:key="location"
+			app:title="@string/location"
+			app:defaultValue="false"
+			app:summaryOn="@string/location_ON"
+			app:summaryOff="@string/location_OFF"/>
+
+		<ListPreference
+			app:dependency="location"
+			app:defaultValue="reply"
+			app:entries="@array/reply_entries"
+			app:entryValues="@array/reply_values"
+			app:key="location_reply"
+			app:title="@string/location_Access"
+			app:useSimpleSummaryProvider="true"/>
+
+	</PreferenceCategory>
+
+	<PreferenceCategory app:title="@string/sync_header"
+		android:layout="@layout/title_view">
+
+		<SeekBarPreference
+			app:key="sync"
+			app:title="@string/sync"
+			app:defaultValue="3"
+			android:max="26" />
+
+	</PreferenceCategory>
+
+	<PreferenceCategory app:title="@string/notification_header"
+		android:layout="@layout/title_view">
+
+		<SeekBarPreference
+			app:key="levelDangerNotification"
+			app:title="@string/danger_level"
+			app:defaultValue="2"
+			android:max="5" />
+
+		<SwitchPreferenceCompat
+			app:key="locationNotification"
+			app:title="@string/notifications_pref"
+			app:defaultValue="true"
+			app:summaryOff="@string/my_locations_OFF"
+			app:summaryOn="@string/my_locations_ON"/>
+
+		<SwitchPreferenceCompat
+			app:key="dangerNotification"
+			app:title="@string/danger_Notification"
+			app:dependency="location"
+			app:defaultValue="true"
+			app:summaryOn="@string/danger_notif_ON"
+			app:summaryOff="@string/danger_notif_OFF"/>
+
+	</PreferenceCategory>
+
+</PreferenceScreen>

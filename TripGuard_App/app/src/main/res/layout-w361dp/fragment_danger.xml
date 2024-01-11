@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:paddingBottom="60dp"
+	android:background="@color/backgroundGrey"
+	tools:context="ui.DangerFragment">
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/backgroundGrey"
+		tools:context=".ui.search.DangerFragment">
+
+
+		<!-- constraints and text values are temporary -->
+		<TextView
+			android:id="@+id/text_area"
+			android:layout_width="match_parent"
+			android:layout_height="60dp"
+			android:layout_marginTop="20dp"
+			android:gravity="center"
+			android:paddingLeft="60dp"
+			android:paddingRight="60dp"
+			android:text="@string/lorem"
+			android:textColor="#000000"
+			app:autoSizeTextType="uniform"
+			app:autoSizeMinTextSize="5sp"
+			app:autoSizeMaxTextSize="45sp"
+			app:autoSizeStepGranularity="2sp"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
+
+		<TextView
+			android:id="@+id/circle"
+			android:layout_width="200dp"
+			android:layout_height="200dp"
+			android:layout_marginTop="24dp"
+			android:background="@drawable/circle"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/info_title" />
+
+		<TextView
+			android:id="@+id/text_higher_order_area"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:text="@string/lorem"
+			android:textSize="20sp"
+			app:layout_constraintTop_toBottomOf="@+id/text_area" />
+
+		<TextView
+			android:id="@+id/text_danger_level"
+			android:layout_width="118dp"
+			android:layout_height="72dp"
+			android:layout_marginTop="50dp"
+			android:gravity="center"
+			android:text="@string/lorem"
+			android:textColor="@color/black"
+			android:textSize="25sp"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="@+id/circle" />
+
+		<TextView
+			android:id="@+id/text_search_date"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="15dp"
+			android:gravity="center"
+			android:textColor="@color/black"
+			android:text="@string/lorem"
+			app:layout_constraintTop_toBottomOf="@+id/text_danger_level" />
+
+		<TextView
+			android:id="@+id/danger_text"
+			android:layout_width="206dp"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="32dp"
+			android:layout_marginEnd="20dp"
+			android:text="@string/lorem"
+			android:textSize="20sp"
+			android:layout_marginBottom="20dp"
+			app:layout_constraintEnd_toStartOf="@+id/moreInfo"
+			app:layout_constraintTop_toBottomOf="@+id/bookmarkButton" />
+
+		<TextView
+			android:id="@+id/info_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:gravity="center"
+			android:text="@string/lorem"
+			android:textColor="@color/black"
+			android:textSize="25sp"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/text_higher_order_area" />
+
+		<TextView
+			android:id="@+id/chooseDate"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/choose_date"
+			android:textColor="@color/black"
+			android:textSize="20sp"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/calendarButton" />
+
+		<ImageButton
+			android:id="@+id/calendarButton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="8dp"
+			android:background="@color/transparent"
+			android:contentDescription="Knapp for å endre dato"
+			android:src="@drawable/ic_calendar"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/circle" />
+
+		<Button
+			android:id="@+id/bookmarkButton"
+			android:layout_width="320dp"
+			android:layout_height="60dp"
+			android:layout_marginTop="20dp"
+			android:background="@drawable/round_box"
+			android:backgroundTint="@color/yellow"
+			android:backgroundTintMode="multiply"
+			android:drawableRight="@drawable/ic_plus"
+			android:paddingRight="20dp"
+			android:text="@string/add"
+			android:textSize="20dp"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/chooseDate" />
+
+
+		<ImageButton
+			android:id="@+id/infoButton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="40dp"
+			android:layout_marginEnd="40dp"
+			android:background="@color/transparent"
+			android:contentDescription="Knapp for mer info om farenivå"
+			android:src="@drawable/ic_info2"
+			app:layout_constraintEnd_toEndOf="@+id/bookmarkButton"
+			app:layout_constraintTop_toBottomOf="@+id/bookmarkButton" />
+
+
+		<TextView
+			android:id="@+id/moreInfo"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+			android:layout_marginEnd="24dp"
+			android:text="@string/more_info"
+			android:textColor="@color/black"
+			android:textSize="20sp"
+			app:layout_constraintEnd_toEndOf="@+id/bookmarkButton"
+			app:layout_constraintTop_toBottomOf="@+id/infoButton" />
+
+		<androidx.constraintlayout.widget.Group
+			android:id="@+id/group"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+
+		<androidx.constraintlayout.widget.Group
+			android:id="@+id/group2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+
+
+	</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/mobile_navigation"
+	app:startDestination="@+id/navigation_search">
+
+	<fragment
+		android:id="@+id/navigation_search"
+		android:name="com.example.team25.ui.search.SearchFragment"
+		android:label="@string/title_search"
+		tools:layout="@layout/fragment_search" >
+		<action
+			android:id="@+id/action_navigation_search_to_avalanche_search_fragment"
+			app:destination="@id/avalanche_search_fragment" />
+		<action
+			android:id="@+id/action_navigation_search_to_modular_search_fragment"
+			app:destination="@id/modular_search_fragment" />
+	</fragment>
+
+	<fragment
+		android:id="@+id/navigation_locations"
+		android:name="com.example.team25.ui.locations.LocationsFragment"
+		android:label="@string/title_locations"
+		tools:layout="@layout/fragment_my_locations" >
+		<action
+			android:id="@+id/action_navigation_search_to_preferenceSettings"
+			app:destination="@id/preferenceSettings" />
+	</fragment>
+
+	<fragment
+		android:id="@+id/information_homepage"
+		android:name="com.example.team25.ui.information.InformationFragment"
+		android:label="Informasjon"
+		tools:layout="@layout/fragment_information">
+		<action
+			android:id="@+id/action_information_to_ava_information"
+			app:destination="@+id/info_snow"/>
+		<action
+			android:id="@+id/action_information_to_fll_information"
+			app:destination="@+id/info_flood_landslide"/>
+		<action
+			android:id="@+id/action_information_to_about"
+			app:destination="@+id/info_about"/>
+	</fragment>
+
+	<fragment
+		android:id="@+id/info_snow"
+		android:name="com.example.team25.ui.information.InformationAvalanche"
+		android:label="Informasjon snøskred"
+		tools:layout="@layout/fragment_info_avalanche">
+		<action
+			android:id="@+id/action_ava_information_to_information"
+			app:destination="@+id/information_homepage"/>
+	</fragment>
+
+	<fragment
+		android:id="@+id/info_flood_landslide"
+		android:name="com.example.team25.ui.information.InformationFloodLandslide"
+		android:label="Informasjon flom og jordskred"
+		tools:layout="@layout/fragment_info_flood_landslide">
+		<action
+			android:id="@+id/action_fll_information_to_information"
+			app:destination="@+id/information_homepage"/>
+	</fragment>
+
+	<fragment
+		android:id="@+id/info_about"
+		android:name="com.example.team25.ui.information.AboutFragment"
+		android:label="Om prosjektet"
+		tools:layout="@layout/fragment_about">
+		<action
+			android:id="@+id/action_about_to_information"
+			app:destination="@+id/information_homepage"/>
+	</fragment>
+
+	<fragment
+		android:id="@+id/navigation_information"
+		android:name="com.example.team25.ui.information.InformationFragment"
+		android:label="@string/title_notifications"
+		tools:layout="@layout/fragment_information" />
+
+	<fragment
+		android:id="@+id/avalanche_search_fragment"
+		android:name="com.example.team25.ui.search.AvalancheSearchFragment"
+		android:label="avalanche_search_fragment"
+		tools:layout="@layout/fragment_avalanche_search" >
+
+		<action
+			android:id="@+id/action_avalanche_search_to_region_list"
+			app:destination="@+id/avalanche_region_list_fragment"/>
+	</fragment>
+
+	<fragment
+		android:id="@+id/modular_search_fragment"
+		android:name="com.example.team25.ui.search.ModularSearchFragment"
+		android:label="modular_search_fragment"
+		tools:layout="@layout/fragment_modular_search" >
+
+		<action
+			android:id="@+id/action_modular_search_to_municipality_search"
+			app:destination="@+id/municipality_search_fragment" />
+		<argument
+			android:name="disasterType"
+			app:argType="com.example.team25.utils.Disaster" />
+	</fragment>
+
+	<fragment
+		android:id="@+id/avalanche_region_list_fragment"
+		android:name="com.example.team25.ui.search.AvalancheRegionList"
+		android:label="avalanche_region_list_fragment"
+		tools:layout="@layout/fragment_avalanche_region_list" >
+		<!--
+		<action
+			android:id="@+id/action_navigation_avalanche_search_to_avalanche_region_list"
+			app:destination="@id/avalanche_region_list_fragment" />
+			-->
+		<action
+			android:id="@+id/action_avalanche_region_list_fragment_to_danger_fragment"
+			app:destination="@+id/danger_fragment" />
+
+		<action
+			android:id="@+id/action_avalanche_region_list_fragment_to_avalanche_search"
+			app:destination="@+id/avalanche_search_fragment" />
+	</fragment>
+
+	<fragment
+		android:id="@+id/municipality_search_fragment"
+		android:name="com.example.team25.ui.search.MunicipalitySearch"
+		android:label="municipality_search_fragment"
+		tools:layout="@layout/fragment_municipality_search" >
+
+		<argument
+			android:name="disasterType"
+			app:argType="com.example.team25.utils.Disaster" />
+		<argument
+			android:name="county"
+			app:argType="string" />
+	</fragment>
+
+	<fragment
+		android:id="@+id/danger_fragment"
+		android:name="com.example.team25.ui.DangerFragment"
+		android:label="danger_fragment"
+		tools:layout="@layout/fragment_danger" >
+		<argument
+			android:name="disaster"
+			app:argType="com.example.team25.utils.Disaster" />
+		<argument
+			android:name="dangerLevel"
+			app:argType="integer" />
+		<argument
+			android:name="area"
+			app:argType="string" />
+		<argument
+			android:name="higherOrderArea"
+			app:argType="string" />
+		<action
+			android:id="@+id/action_danger_fragment_to_info_snow"
+			app:destination="@+id/info_snow" />
+		<action
+			android:id="@+id/action_danger_fragment_to_info_flood_landslide"
+			app:destination="@+id/info_flood_landslide" />
+	</fragment>
+
+	<fragment
+		android:id="@+id/preferenceSettings"
+		android:name="com.example.team25.ui.preferences.PreferenceSettings"
+		android:label="PreferenceSettings" />
+
+</navigation>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:paddingBottom="@dimen/activity_vertical_margin"
+	android:paddingLeft="@dimen/activity_horizontal_margin"
+	android:orientation="vertical"
+	android:paddingRight="@dimen/activity_horizontal_margin"
+	android:paddingTop="@dimen/activity_vertical_margin"
+	tools:context=".ui.information.InformationFloodLandslide">
+
+	<TextView
+		android:id="@+id/title_information"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/information_title"
+		android:textSize="40sp"
+		android:textColor="@color/black"
+		android:textAllCaps="true"
+		android:gravity="center_horizontal"/>
+
+	<TextView
+		android:id="@+id/title_information_flood_landslide"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/info_title_fl2"
+		android:paddingBottom="15dp"
+		android:textSize="20sp"
+		android:textColor="@color/black"
+		android:textAllCaps="true"
+		android:gravity="center_horizontal"/>
+
+	<ScrollView
+		android:id="@+id/scrollView"
+		android:layout_width="500dp"
+		android:layout_height="match_parent"
+		android:layout_gravity="center_horizontal" >
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<Button
+				android:id="@+id/greenCircle"
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:background="@drawable/circle_level1"
+				android:layout_gravity="center_horizontal"/>
+
+			<TextView
+				android:id="@+id/title_caution1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/caution1"
+				android:gravity="center"
+				android:paddingBottom="5dp"
+				android:textColor="@color/black"
+				android:textSize="25sp"/>
+
+			<TextView
+				android:id="@+id/text_caution1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/info_fl_1"
+				android:textColor="@color/darkgrey"
+				android:layout_gravity="center"
+				android:textSize="20sp"
+				android:paddingBottom="30dp"/>
+
+			<Button
+				android:id="@+id/yellowCircle"
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:background="@drawable/circle_level2"
+				android:layout_gravity="center_horizontal"/>
+
+			<TextView
+				android:id="@+id/title_caution2"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/caution2"
+				android:paddingBottom="5dp"
+				android:gravity="center"
+				android:textColor="@color/black"
+				android:textSize="25sp"/>
+
+			<TextView
+				android:id="@+id/text_caution2"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/info_fl_2"
+				android:textColor="@color/darkgrey"
+				android:layout_gravity="center"
+				android:textSize="20sp"/>
+
+			<TextView
+				android:id="@+id/text_caution2_more"
+				android:paddingTop="15dp"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/info_fl_2_more"
+				android:textColor="@color/darkgrey"
+				android:layout_gravity="center"
+				android:textSize="20sp"
+				android:paddingBottom="20dp"/>
+
+			<Button
+				android:id="@+id/orangeCircle"
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:background="@drawable/circle_level3"
+				android:layout_gravity="center_horizontal"/>
+
+			<TextView
+				android:id="@+id/title_caution3"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/caution3"
+				android:gravity="center"
+				android:paddingBottom="5dp"
+				android:textColor="@color/black"
+				android:textSize="25sp"/>
+
+			<TextView
+				android:id="@+id/text_caution3"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/info_fl_3"
+				android:textColor="@color/darkgrey"
+				android:layout_gravity="center"
+				android:textSize="20sp"/>
+
+			<TextView
+				android:id="@+id/text_caution3_more"
+				android:paddingTop="15dp"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/info_fl_3_more"
+				android:textColor="@color/darkgrey"
+				android:layout_gravity="center"
+				android:textSize="20sp"
+				android:paddingBottom="20dp"/>
+
+			<Button
+				android:id="@+id/redCircle"
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:background="@drawable/circle_level4"
+				android:layout_gravity="center_horizontal"/>
+
+			<TextView
+				android:id="@+id/title_caution4"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/caution4"
+				android:paddingBottom="5dp"
+				android:gravity="center"
+				android:textColor="@color/black"
+				android:textSize="25sp"/>
+
+			<TextView
+				android:id="@+id/text_caution4"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/info_fl_4"
+				android:textColor="@color/darkgrey"
+				android:layout_gravity="center"
+				android:textSize="20sp"/>
+
+			<TextView
+				android:id="@+id/text_caution4_more"
+				android:paddingTop="15dp"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/info_fl_4_more"
+				android:textColor="@color/darkgrey"
+				android:layout_gravity="center"
+				android:textSize="20sp"
+				android:paddingBottom="25dp"/>
+
+			<TextView
+				android:id="@+id/text_caution4_more"
+				android:paddingTop="15dp"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textStyle="italic"
+				android:text="@string/source"
+				android:textColor="@color/black"
+				android:layout_gravity="center"
+				android:textSize="20sp"
+				android:paddingBottom="50dp"/>
+
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

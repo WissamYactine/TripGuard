@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="colorPrimary">#008577</color>
+	<color name="colorPrimaryDark">#00574B</color>
+	<color name="white">#FBFAFA</color>
+	<color name="colorAccent">#00574B</color>
+	<color name="backgroundGrey">#F4F2F2</color>
+	<color name="black">#000000</color>
+	<color name="grey_stroke">#707070</color>
+	<color name="egg">#d3e0e5</color>
+	<color name="darkgrey">#474747</color>
+
+	<!-- Danger Fragment -->
+	<color name="grey">#e4e5e6</color>
+	<color name="dangerlevel1">#5FEFAC</color>
+	<color name="dangerlevel2">#EFF883</color>
+	<color name="dangerlevel3">#EFC16B</color>
+	<color name="dangerlevel4">#FD8D8D</color>
+	<color name="dangerlevel5">#B55A5A</color>
+	<color name="dangerlevelExtra">#D81B60</color>
+	<color name="transparent">#00000000</color>
+
+	<!-- Search -->
+	<color name="avalanche_button_color">#F6F6A2</color>
+	<color name="landslide_button_color">#F9B274</color>
+	<color name="flood_button_color">#9EB1FF</color>
+
+
+	<!-- Locations -->
+	<color name="yellow">#fdfd96</color>
+
+
+</resources>

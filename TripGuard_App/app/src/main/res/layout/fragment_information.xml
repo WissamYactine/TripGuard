@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:paddingBottom="60dp"
+	android:background="@color/backgroundGrey"
+	tools:context="ui.information.InformationFragment">
+
+	<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/backgroundGrey"
+		tools:context=".ui.information.InformationFragment">
+
+		<TextView
+			android:id="@+id/text_information"
+			android:layout_width="391dp"
+			android:layout_height="78dp"
+			android:layout_marginTop="30dp"
+			android:gravity="center"
+			android:text="@string/information_title"
+			android:textAlignment="center"
+			android:textAllCaps="true"
+			android:textColor="@color/black"
+			android:textSize="40sp"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
+
+		<Button
+			android:id="@+id/button_info_a"
+			android:layout_width="300dp"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="24dp"
+			android:background="@drawable/round_box"
+			android:backgroundTint="@color/egg"
+			android:backgroundTintMode="multiply"
+			android:paddingLeft="5dp"
+			android:paddingTop="10dp"
+			android:paddingRight="5dp"
+			android:paddingBottom="10dp"
+			android:text="@string/info_button_sn"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/button_info_fl" />
+
+		<Button
+			android:id="@+id/button_info_fl"
+			android:layout_width="300dp"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="50dp"
+			android:background="@drawable/round_box"
+			android:backgroundTint="@color/egg"
+			android:backgroundTintMode="multiply"
+			android:paddingLeft="5dp"
+			android:paddingTop="10dp"
+			android:paddingRight="5dp"
+			android:paddingBottom="10dp"
+			android:text="@string/info_button_fl"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/text_information" />
+
+		<Button
+			android:id="@+id/button_info_about"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="50dp"
+			android:background="@drawable/round_box"
+			android:backgroundTint="@color/grey"
+			android:backgroundTintMode="multiply"
+			android:paddingLeft="10dp"
+			android:paddingRight="10dp"
+			android:text="@string/about_button"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/button_info_a" />
+
+	</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+    android:layout_height="75dp">
+
+	<Button
+		android:id="@+id/button_county"
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		android:background="@drawable/round_box"
+		android:text="@string/lorem"
+		android:textColor="@color/black"
+		android:backgroundTint="@color/egg"
+		android:layout_marginRight="30dp"
+		android:layout_marginLeft="30dp"
+		android:backgroundTintMode="multiply"
+		android:textSize="20sp"/>
+
+</LinearLayout>

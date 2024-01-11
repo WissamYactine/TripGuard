@@ -1,0 +1,128 @@
+<resources>
+	<string name="app_name">TripGuard</string>
+	<string name="title_search">Søk</string>
+	<string name="title_locations">Lokasjoner</string>
+	<string name="title_information">Informasjon</string>
+	<string name="title_information2">Informasjon</string>
+	<string name="notifications">Varsler</string>
+	<string name="off_on">Av/På</string>
+	<string name="my_locations">Mine Lokasjoner</string>
+	<string name="current_location">Nåværende lokasjon:</string>
+	<string name="save">Lagre</string>
+	<string name="add_location">Legg til lokasjon</string>
+	<string name="about_us">Om oss</string>
+	<string name="information_regarding_different_notifications">Informasjon om ulike varsler</string>
+	<string name="information_about_group">Informasjon om gruppa</string>
+
+	<string name="lorem">Lorem Ipsum</string>
+	<string name="title_settings">Settings</string>
+	<string name="title_notifications">Informasjon</string>
+	<string name="disaster_search">Velg et søk</string>
+	<string name="search_fragment_avalanche">Snøskredsøk</string>
+	<string name="search_fragment_flood">Flomsøk</string>
+	<string name="search_fragment_landslide">Jordskredsøk</string>
+	<string name="search_type_flood">Flomsøk</string>
+	<string name="search_type_landslide">Jordskredsøk</string>
+	<string name="search_type_avalance">Snøskred</string>
+
+	<string name="search_listchoice">Velg fra liste</string>
+	<string name="search_choose_region">Velg en region</string>
+	<string name="search_choose_county">Velg et fylke</string>
+	<string name="search_choose_municipality">Velg en kommune</string>
+	<string name="search_municipality_in">Søk etter kommune i</string>
+
+	<string name="settings_radius_info">Radius of the area you want to get notification based on your position</string>
+	<string name="settings_radius_selected">Radius: 30 km</string>
+	<string name="settings_interval_info">How often should we get data</string>
+	<string name="settings_interval_selected">Every 15 min</string>
+	<string name="howToAdd">Bruk søke-funksjonen for å legge inn elementer i listen over lokasjoner.</string>
+
+	<string name="choose_date">Velg dato</string>
+	<string name="more_info">Mer info</string>
+	<string name="add">Legg til i mine lokasjoner</string>
+
+	<string name="search_municipality">Søk etter kommune</string>
+	<string name="search_hint">Søk</string>
+
+	<string name="info_title_fl2">Flom- og jordskred-varsling</string>
+	<string name="info_title_sn2">Snøskred-varsling</string>
+
+	<string name="info_button_fl">Informasjon om aktsomhetsnivåer innen flom- og jordskred-varsling</string>
+	<string name="info_button_sn">Informasjon om faregradene innen snøskred-varsling</string>
+	<string name="about_button">Om prosjektet</string>
+	<string name="about_API">Data er hentet fra NVEs API.&#xA;https://www.nve.no/om-nve/apne-data-og-api-fra-nve/</string>
+
+	<string name="information_title">Informasjon</string>
+
+	<string name="caution1">Aktsomhetsnivå 1</string>
+	<string name="caution2">Aktsomhetsnivå 2</string>
+	<string name="caution3">Aktsomhetsnivå 3</string>
+	<string name="caution4">Aktsomhetsnivå 4</string>
+
+	<string name="caution_info">Aktsomhetsnivået sier noe om hvilken grad av aktsomhet eller oppmerksomhet varselmottaker bør ha og hvilke tiltak man kan gjøre for å forebygge skader.</string>
+
+	<string name="info_fl_4">Ekstrem situasjon som forekommer svært sjelden, krever tett oppfølging og kan medføre store skader.</string>
+	<string name="info_fl_4_more">Svært mange skredhendelser; flere kan få store konsekvenser. Omfattende oversvømmelser, erosjonsskader og flomskader på bebyggelse og infrastruktur. Gjentaksintervallet er mer enn 50 år.</string>
+	<string name="info_fl_3">Alvorlig situasjon som forekommer sjelden, krever beredskapsmessige forberedelser og kan medføre alvorlige skader.</string>
+	<string name="info_fl_3_more">Mange skredhendelser; noen kan få store konsekvenser. Omfattende oversvømmelser, erosjonsskader og flomskader på utsatte steder. Gjentaksintervallet er mer enn 5 år.</string>
+	<string name="info_fl_2">Utfordrende situasjon som krever oppfølging og kan medføre skader lokalt.</string>
+	<string name="info_fl_2_more">Noen skredhendelser; enkelte store hendelser kan forekomme. Lokale oversvømmelser og/eller erosjonsskader pga. raskt økende vannføring i bekker/småelver, isgang, is i bekke-/elveløp, tele etc. Spesielt stor vannføring/vannstand i forhold til hva som er normalt for årstiden. Vannføring tett oppunder oransje nivå. </string>
+	<string name="info_fl_1">Generelt trygge forhold på regionalt nivå med unntakelse når det foreligger et varsel om kraftige regnbyger som indikerer fare for overvann i tettbygde områder, lokale oversvømmelser, bekke- og elveløpsendringer, jord- og flomskred der regnbygene treffer.</string>
+
+	<string name="title_advice">Ferdselsråd</string>
+	<string name="title_causes">Utløsningsårsaker</string>
+
+	<string name="danger1">Faregrad 1</string>
+	<string name="danger2">Faregrad 2</string>
+	<string name="danger3">Faregrad 3</string>
+	<string name="danger4">Faregrad 4</string>
+	<string name="danger5">Faregrad 5</string>
+
+	<string name="ava_advice1">Enkelte spesielt utsatte områder vil kunne være skredutsatte. I disse områdene, vær oppmerksom på mulig skredproblem. </string>
+	<string name="ava_advice2">Ferdsel i skredterreng krever kunnskap, erfaring i rutevalg og evne til å identifisere skredproblem. Generelt anbefales det å unngå terreng brattere enn 30 grader.</string>
+	<string name="ava_advice3">Ferdsel i skredterreng krever solid kunnskap, erfaring i rutevalg og evne til å identifisere skredproblem. Generelt anbefales det å unngå terreng brattere enn 30 grader og holde avstand til utløpsområder.</string>
+	<string name="ava_advice4">Ferdsel i skredterreng anbefales ikke. Skred som løsner av seg selv forventes. Unngå løsne- og utløpsområder.</string>
+	<string name="ava_advice5">Ferdsel i skredterreng frarådes!</string>
+
+	<string name="avalanche_cause1">Utløsning generelt kun mulig ved stor tilleggsbelastning i noen få ekstreme heng. Kun små eller middels store naturlig utløste skred er mulig.</string>
+	<string name="avalanche_cause2">Utløsning mulig, spesielt ved stor tilleggsbelastning i brattheng. Svært store naturlig utløste skred forventes ikke</string>
+	<string name="avalanche_cause3">Utløsning mulig, selv ved liten tilleggsbelastning i brattheng. Under spesielle forhold kan det forekomme noen store og enkelte svært store naturlig utløste skred.</string>
+	<string name="avalanche_cause4">Utløsning sannsynlig selv ved liten tilleggsbelastning i mange brattheng. Under spesielle forhold forventes det mange store og noen svært store naturlig utløste skred.</string>
+	<string name="avalanche_cause5">Mange svært store, også ekstremt store, naturlig utløste skred forventes, selv i moderat bratt terreng. Fjernutløsning meget sannsynlig.</string>
+
+	<string name="source">Tekstlig innhold er hentet fra NVEs varsom.no</string>
+
+	<string name="about_title">Om prosjektet</string>
+	<string name="API_title">Informasjon om tilgjengelig data</string>
+	<string name="about_API_text">Data er hentet fra NVEs API for snøskred, flom og jordskredvarsling: https://www.nve.no/om-nve/apne-data-og-api-fra-nve/</string>
+	<string name="about_project_title">Bak prosjektet</string>
+	<string name="about_project_group">Prosjektet er utarbeidet av fem informatikkstudenter i sammenheng med faget IN2000 ved Institutt for Informatikk, Universitetet i Oslo (Team 25). </string>
+
+	<string name="locations_title">Lokasjoner</string>
+	<string name="locations_preferences">Instillinger</string>
+
+	<!-- Preferences Titles -->
+	<string name="location_header">Lokasjonstilgang</string>
+	<string name="sync_header">Henting av data</string>
+	<string name="notification_header">Notifikasjoner</string>
+
+	<!-- Preferences Location services-->
+	<string name="location">GPS-posisjon</string>
+	<string name="location_ON">Gi tilgang til nåværende posisjon</string>
+	<string name="location_OFF">Tilgang til posisjon er ikke tillatt: Kan ikke bruke fare varsling funksjonalitet</string>
+	<string name="location_Access">Gi tilgang til posisjon</string>
+
+	<!-- Preferences Fetching Data-->
+	<string name="sync">Hent data hver:</string>
+
+	<!-- Preferences Notification services-->
+	<string name="notifications_pref">Notifikasjoner for lokasjoner</string>
+	<string name="danger_level">Minimum farenivå for varsling:</string>
+	<string name="my_locations_ON">Sender notifikasjoner for lokasjoner i Mine Lokasjoner med bestemt farenivå</string>
+	<string name="my_locations_OFF">Ingen notifikasjon skal sendes</string>
+	<string name="danger_Notification">Fare i nåværende posisjon</string>
+	<string name="danger_notif_ON">Søker kontinuerlig etter endring i snøskredvarsel basert på nåværende posisjon</string>
+	<string name="danger_notif_OFF">Ingen notifikasjon skal sendes</string>
+
+
+</resources>
