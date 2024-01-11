@@ -1,0 +1,12 @@
+$dokka.format:gfm
+$dokka.linkExtension:md
+
+com.example.team25
+com.example.team25.api
+com.example.team25.persistence
+com.example.team25.ui
+com.example.team25.ui.information
+com.example.team25.ui.locations
+com.example.team25.ui.search
+com.example.team25.ui.settings
+com.example.team25.utils
