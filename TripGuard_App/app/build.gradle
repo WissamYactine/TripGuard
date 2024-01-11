@@ -1,0 +1,117 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'org.jetbrains.dokka-android'
+
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    // The two options below are needed because of:
+    // https://stackoverflow.com/questions/48988778/cannot-inline-bytecode-built-with-jvm-target-1-8-into-bytecode-that-is-being-bui
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+	repositories {
+		jcenter()
+		mavenCentral()
+	}
+
+    defaultConfig {
+        applicationId "com.example.team25"
+        minSdkVersion 23
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+	}
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+
+tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+	kotlinOptions {
+		jvmTarget = JavaVersion.VERSION_1_8
+	}
+}
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.core:core-ktx:1.0.2'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.navigation:navigation-fragment:2.0.0'
+    implementation 'androidx.navigation:navigation-ui:2.0.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.0.0'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.0.0'
+	androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+	androidTestImplementation 'androidx.test:runner:1.1.0'
+	androidTestImplementation 'androidx.test:rules:1.1.0'
+	androidTestImplementation 'androidx.test:rules:1.1.1'
+	androidTestImplementation 'androidx.test.ext:truth:1.1.0'
+	androidTestImplementation 'androidx.test.ext:junit:1.1.0'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:support-compat:28.0.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
+    implementation 'khttp:khttp:1.0.0'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.3'
+    implementation 'com.github.salomonbrys.kotson:kotson:2.5.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.0.0'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:cardview-v7:28.0.0'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+	implementation 'org.jetbrains.kotlin:kotlin-reflect:1.3.0'
+
+    implementation 'androidx.preference:preference:1.1.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+
+	implementation "androidx.room:room-runtime:2.2.5"
+	kapt "androidx.room:room-compiler:2.2.5"
+
+	testImplementation("org.assertj:assertj-core:3.16.1")
+	testImplementation "org.junit.jupiter:junit-jupiter-api:5.3.2"
+	testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:5.3.2"
+	testImplementation "org.junit.jupiter:junit-jupiter-params:5.3.2"
+}
+
+dokka {
+    /*
+	 * Below is a hack to fix dokka for android studio, see
+	 * https://stackoverflow.com/questions/56460245/could-not-determine-the-dependencies-of-task-appdokka
+	 */
+    impliedPlatforms = ["common"]
+    // This will force platform tags for all non-common sources e.g. "JVM"
+    kotlinTasks {
+        // dokka fails to retrieve sources from MPP-tasks so they must be set empty to avoid exception
+        // use sourceRoot instead (see below)
+        []
+    }
+    sourceRoot {
+        // assuming there is only a single source dir...
+        // path = kotlin.sourceSets.commonMain.kotlin.srcDirs[0]
+        platforms = ["common"]
+    }
+
+    outputFormat = 'gfm'
+    outputDirectory = 'docs/dokka'
+}
